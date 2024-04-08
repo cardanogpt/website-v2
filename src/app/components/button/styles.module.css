@@ -1,0 +1,56 @@
+.button {
+	border: 0.06rem solid;
+	border-radius: 1.875rem;
+	padding: 1rem 1.75rem;
+	cursor: pointer;
+	background: none;
+	color: var(--app-color-white-a);
+	font-size: 0.875rem;
+	font-weight: 600;
+	transition: transform 0.5s;
+}
+
+.button div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.button:hover {
+	transform: scale(1.02);
+}
+
+.button.variantA {
+	border-color: var(--app-color-purple-a);
+	background: var(--app-color-blue-d);
+	box-shadow: 0px 4px 30px 0px rgba(22, 86, 185, 0.2);
+}
+
+.button.variantB {
+	position: relative;
+	border: none;
+	background: var(--app-color-gradient-d);
+}
+
+.button.variantB > div {
+	position: relative;
+	z-index: 20;
+}
+
+.button.variantB::after {
+	content: "";
+	background: var(--app-color-blue-f);
+	border-radius: 1.875rem;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: 0.1rem;
+	z-index: 10;
+}
+
+.button.variantC {
+	background: var(--app-color-blue-b);
+	border-color: var(--app-color-blue-b);
+}

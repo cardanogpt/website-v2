@@ -1,0 +1,55 @@
+:root {
+	--app-max-width: 1340px;
+	--app-color-black-a: #0b0b0b;
+	--app-color-gray-a: #bcbcbc;
+	--app-color-gray-b: #b1b0c1;
+	--app-color-gray-c: #706f7d;
+	--app-color-white-a: #ffffff;
+	--app-color-white-b: #f1f0fb;
+	--app-color-blue-a: #2074f5;
+	--app-color-blue-b: #1656b9;
+	--app-color-blue-c: #18295b;
+	--app-color-blue-d: #110f27;
+	--app-color-blue-e: #1656b94d;
+	--app-color-blue-f: #020042;
+	--app-color-puprle-a: #dad6ff;
+	--app-color-puprle-b: #c1d6f3;
+	--app-color-puprle-c: #deebfd;
+	--app-color-puprle-d: #8174ff4d;
+	--app-color-puprle-e: #8174ff;
+	--app-color-puprle-f: #b8cff0;
+	--app-color-gradient-a: linear-gradient(
+		93.05deg,
+		#deebfd -0.28%,
+		#1656b9 110.5%
+	);
+	--app-color-gradient-b: linear-gradient(
+		90.44deg,
+		#8174ff 1.46%,
+		#1656b9 100%
+	);
+	--app-color-gradient-c: linear-gradient(180deg, #8174ff 0%, #110f27 51.72%);
+	--app-color-gradient-d: linear-gradient(
+		90.44deg,
+		#8174ff 1.46%,
+		#1656b9 100%
+	);
+}
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	scroll-behavior: smooth;
+}
+
+body {
+	overflow-x: hidden;
+	background: var(--app-color-black-a);
+}
+
+.anchor-link {
+	display: inline-block;
+	text-decoration: none;
+	background: none;
+}

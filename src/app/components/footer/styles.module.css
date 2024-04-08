@@ -1,0 +1,5 @@
+.footer {
+	background: var(--app-color-blue-d);
+	box-shadow: 100px 0px 80px 60px rgba(34, 30, 75, 1);
+	overflow: hidden;
+}
