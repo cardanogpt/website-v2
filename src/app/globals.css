@@ -1,5 +1,5 @@
 :root {
-	--app-max-width: 1340px;
+	--app-max-width: 1280px;
 	--app-color-black-a: #0b0b0b;
 	--app-color-green-a: #49df28;
 	--app-color-green-b: #49df281a;
@@ -9,13 +9,16 @@
 	--app-color-gray-a: #b8b8b8;
 	--app-color-gray-b: #e8e8e8;
 	--app-color-gray-c: #edfcea;
-	--app-color-gray-d: #e8e8e805;
+	--app-color-gray-d: #e8e8e8e6;
+	--app-color-gray-e: #e8e8e805;
+	--app-color-gray-f: #edfcea66;
+	--app-color-gray-g: #70707066;
 	--app-color-white-a: #ffffff;
-	--app-color-white-b: #f1f0fb;
+	--app-color-white-b: #ffffff66;
 	--app-color-gradient-a: linear-gradient(
-		93.05deg,
-		#deebfd -0.28%,
-		#1656b9 110.5%
+		91.9deg,
+		#edfcea 1.89%,
+		#707070 99.49%
 	);
 	--app-color-gradient-b: linear-gradient(
 		90.44deg,
