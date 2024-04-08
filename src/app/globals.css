@@ -1,23 +1,17 @@
 :root {
 	--app-max-width: 1340px;
 	--app-color-black-a: #0b0b0b;
-	--app-color-gray-a: #bcbcbc;
-	--app-color-gray-b: #b1b0c1;
-	--app-color-gray-c: #706f7d;
+	--app-color-green-a: #49df28;
+	--app-color-green-b: #49df281a;
+	--app-color-green-c: #49df280d;
+	--app-color-green-d: #49df2805;
+	--app-color-yellow-a: #e6dc0b14;
+	--app-color-gray-a: #b8b8b8;
+	--app-color-gray-b: #e8e8e8;
+	--app-color-gray-c: #edfcea;
+	--app-color-gray-d: #e8e8e805;
 	--app-color-white-a: #ffffff;
 	--app-color-white-b: #f1f0fb;
-	--app-color-blue-a: #2074f5;
-	--app-color-blue-b: #1656b9;
-	--app-color-blue-c: #18295b;
-	--app-color-blue-d: #110f27;
-	--app-color-blue-e: #1656b94d;
-	--app-color-blue-f: #020042;
-	--app-color-puprle-a: #dad6ff;
-	--app-color-puprle-b: #c1d6f3;
-	--app-color-puprle-c: #deebfd;
-	--app-color-puprle-d: #8174ff4d;
-	--app-color-puprle-e: #8174ff;
-	--app-color-puprle-f: #b8cff0;
 	--app-color-gradient-a: linear-gradient(
 		93.05deg,
 		#deebfd -0.28%,
