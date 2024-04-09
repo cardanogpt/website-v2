@@ -3,3 +3,10 @@
 	margin: 0 auto;
 	color: var(--app-color-white-a);
 }
+
+.main {
+	color: var(--app-color-white-a);
+	line-height: 2rem;
+	max-width: var(--app-max-width);
+	margin: 3rem auto;
+}

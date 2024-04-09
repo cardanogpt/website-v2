@@ -51,6 +51,6 @@
 }
 
 .button.variantC {
-	background: var(--app-color-blue-b);
-	border-color: var(--app-color-blue-b);
+	border-color: var(--app-color-green-a);
+	background: var(--app-color-green-b);
 }
