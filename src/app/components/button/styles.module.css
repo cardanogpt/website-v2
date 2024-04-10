@@ -14,6 +14,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	gap: 0.7rem;
 }
 
 .button:hover {
@@ -29,25 +30,8 @@
 .button.variantB {
 	position: relative;
 	border: none;
-	background: var(--app-color-gradient-d);
-}
-
-.button.variantB > div {
-	position: relative;
-	z-index: 20;
-}
-
-.button.variantB::after {
-	content: "";
-	background: var(--app-color-blue-f);
-	border-radius: 1.875rem;
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom: 0;
-	margin: 0.1rem;
-	z-index: 10;
+	background: var(--app-color-green-a);
+	color: var(--app-color-black-a);
 }
 
 .button.variantC {
