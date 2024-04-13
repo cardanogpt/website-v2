@@ -6,6 +6,7 @@
 	--app-color-green-c: #49df280d;
 	--app-color-green-d: #49df2805;
 	--app-color-green-e: #49df2833;
+	--app-color-green-f: #caf6c11a;
 	--app-color-yellow-a: #e6dc0b14;
 	--app-color-gray-a: #b8b8b8;
 	--app-color-gray-b: #e8e8e8;
@@ -32,6 +33,12 @@
 		90.44deg,
 		#8174ff 1.46%,
 		#1656b9 100%
+	);
+	--app-color-gradient-e: linear-gradient(
+		91.9deg,
+		rgba(41, 41, 41, 0.3) 1.89%,
+		rgba(237, 252, 234, 0.3) 49.77%,
+		rgba(41, 41, 41, 0.3) 99.49%
 	);
 }
 

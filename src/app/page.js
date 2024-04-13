@@ -34,6 +34,23 @@ export default function Home() {
 					</div>
 					<SectionOneImage className={styles.sectionOneImage} />
 				</section>
+				<section className={styles.sectionTwo}>
+					<div className={styles.sectionTwoContent}>
+						<span className={styles.headerPills}>our mission</span>
+						<h2 className={styles.headerTwo}>
+							dedicated to pioneering the integration of
+							artificial intelligence on the blockchain
+						</h2>
+						<p className={styles.paragraph}>
+							Our mission is to develop and deploy cutting-edge AI
+							solutions that enhance the web3 ecosystem, providing
+							accessible, secure, and intelligent tools that drive
+							growth, foster community engagement, and pave the
+							way for a future where technology and human
+							creativity to flourish together.
+						</p>
+					</div>
+				</section>
 			</main>
 			<Footer />
 		</>
