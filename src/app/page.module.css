@@ -111,7 +111,7 @@
 
 .sectionThree {
 	display: grid;
-	padding: 0rem 2rem;
+	padding: 0rem 1rem;
 	overflow: hidden;
 	padding-bottom: 2rem;
 }
@@ -167,16 +167,90 @@
 	border: 0.063rem solid var(--app-color-gray-g);
 }
 
+.sectionFour {
+	padding: 0rem 1rem 4rem 1rem;
+}
+
+.sectionFourTextContainer {
+	position: relative;
+	display: grid;
+}
+
+.sectionFourSliderContainer {
+	position: relative;
+	max-width: 62.938rem;
+	margin: 0 auto;
+	margin-top: 3rem;
+}
+
+.carousel {
+	display: none;
+}
+
+.carouselTabletAndMobile {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.sectionFourSliderItem {
+	background: var(--app-color-gray-i);
+	border-radius: 2.75rem;
+	padding: 3rem 1.5rem;
+}
+
+.sectionFourSliderItem:nth-of-type(2) > div:first-of-type p {
+	text-transform: none;
+}
+
+.sectionFourSliderItem * {
+	text-align: left;
+}
+
+.sectionFourSliderItem h3,
+.sectionFourSliderItem p {
+	width: 100%;
+}
+
+.sectionFourSliderItem a {
+	margin-top: 3rem;
+}
+
+.sectionFourSliderItemBDivBSubTextContainer > h6 {
+	color: var(--app-color-green-a);
+	background: var(--app-color-gradient-d);
+	text-transform: capitalize;
+	font-weight: 600;
+	font-size: 1.25rem;
+	line-height: 1.75rem;
+	margin: 1.6rem 0rem 1rem 0rem;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+}
+
+.sectionFourSliderItemBDivBSubTextContainer > p {
+	font-size: 0.75rem;
+	line-height: 0.938rem;
+	text-transform: none;
+}
+
+.sectionFourSliderItemBDivBSubTextContainer > svg {
+	display: none;
+}
+
 @media all and (min-width: 768px) {
 	.sectionOne {
 		padding: 6rem 2rem;
 	}
 
-	.sectionOne > div:first-of-type {
+	.sectionOne > div:first-of-type,
+	.sectionFourTextContainer {
 		max-width: 45.813rem;
 	}
 
-	.sectionOne > div:first-of-type::after {
+	.sectionOne > div:first-of-type::after,
+	.sectionFourTextContainer::after {
 		top: -70px;
 		content: "";
 		position: absolute;
@@ -188,7 +262,8 @@
 		margin: 0.1% 0%;
 	}
 
-	.sectionOne > div:first-of-type::before {
+	.sectionOne > div:first-of-type::before,
+	.sectionFourTextContainer::before {
 		display: block;
 		content: "";
 		position: absolute;
@@ -271,6 +346,62 @@
 		width: 70%;
 		margin: 0 auto;
 	}
+
+	.sectionFour {
+		padding: 4.5rem 5% 9rem 5%;
+		overflow: hidden;
+	}
+
+	.sectionFourTextContainer {
+		margin: 0 auto;
+	}
+
+	.sectionFourTextContainer > span {
+		position: relative;
+		z-index: 5;
+	}
+
+	.sectionFourTextContainer > h3 {
+		position: relative;
+		width: 85%;
+		z-index: 5;
+	}
+
+	.sectionFourTextContainer p {
+		position: relative;
+		width: 60%;
+		margin: auto;
+		z-index: 5;
+	}
+
+	.sectionFourSliderContainer {
+		position: relative;
+		z-index: 5;
+		margin-top: 4rem;
+	}
+
+	.sectionFourSliderItem {
+		padding: 4rem 6rem 7rem 4rem;
+	}
+
+	.sectionFourSliderItem > div {
+		width: 100%;
+	}
+
+	.sectionFourSliderItem > div h3 {
+		width: 80%;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.sectionFourSliderItem:nth-of-type(2) > div h3 {
+		width: 90%;
+	}
+
+	.sectionFourSliderItemBDivBSubTextContainer > svg {
+		display: block;
+		margin-top: 1rem;
+	}
 }
 
 @media all and (min-width: 992px) {
@@ -278,7 +409,8 @@
 		padding: 8rem 2rem;
 	}
 
-	.sectionOne > div:first-of-type {
+	.sectionOne > div:first-of-type,
+	.sectionFourTextContainer {
 		max-width: 54.813rem;
 	}
 
@@ -298,6 +430,40 @@
 
 	.sectionThreeGrid > div {
 		width: 60%;
+	}
+
+	.sectionFourSliderItem {
+		display: flex;
+		justify-content: space-between;
+		gap: 1rem;
+	}
+
+	.sectionFourSliderItem:nth-of-type(1) {
+		z-index: 10;
+	}
+
+	.sectionFourSliderItem:nth-of-type(2) {
+		z-index: 1;
+		top: -40px;
+	}
+
+	.sectionFourSliderItem:nth-of-type(3) {
+		z-index: 1;
+		top: -80px;
+	}
+
+	.sectionFourSliderItem:nth-of-type(2) > div:first-of-type {
+		width: 50%;
+	}
+
+	.sectionFourSliderItem:nth-of-type(2) > div:first-of-type p {
+		width: 90%;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.sectionFourSliderItem:nth-of-type(2) > div:last-of-type {
+		width: 40%;
 	}
 }
 
@@ -350,5 +516,18 @@
 	.sectionThreeGrid > div:nth-of-type(4) {
 		width: 27.625rem;
 		padding: 3rem;
+	}
+
+	.sectionFour {
+		padding: 4.5rem 0rem 9rem 0rem;
+	}
+
+	.carousel {
+		display: block;
+		margin: 5rem 0rem;
+	}
+
+	.carouselTabletAndMobile {
+		display: none;
 	}
 }

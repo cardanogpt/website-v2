@@ -5,14 +5,108 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { Button, Footer, Header } from "./components";
+import { Button, Footer, Header, VerticalCarousel } from "./components";
 import {
 	DiscordIcon,
+	LineOne,
 	SectionOneImage,
 	gridImageOne,
 	gridImageThree,
 	gridImageTwo,
 } from "./assets";
+import { config } from "react-spring";
+
+const slides = [
+	{
+		key: 0,
+		content: (
+			<div className={styles.sectionFourSliderItem}>
+				<div>
+					<h3 className={styles.headerThree}>
+						Governance & Decision-Making
+					</h3>
+				</div>
+				<div>
+					<p className={styles.paragraph}>
+						CGI token holders who engage in staking are afforded the
+						opportunity to actively participate in the governance of
+						the CardanoGPT ecosystem. As members of the DAO, they
+						are empowered to propose, deliberate upon, and cast
+						votes on pivotal changes, enhancements, and strategic
+						directions. This functionality underscores the
+						importance of community involvement, ensuring that
+						stakeholders have a significant voice in determining the
+						future trajectory of CardanoGPT.
+					</p>
+				</div>
+			</div>
+		),
+	},
+	{
+		key: 1,
+		content: (
+			<div className={styles.sectionFourSliderItem}>
+				<div>
+					<h3 className={styles.headerThree}>
+						Providing Liquidity and Farming CGI
+					</h3>
+				</div>
+				<div>
+					<p className={styles.paragraph}>
+						CardanoGPT offers users the opportunity to participate
+						in decentralized finance (DeFi) activities. By providing
+						liquidity to CGI liquidity pool and engaging in yield
+						farming, users can earn rewards in CGI & WRT tokens
+						while supporting CGI token liquidity.
+					</p>
+					<a href="#" className="anchor-link">
+						<Button variant="A">Farm CGI on Wingriders</Button>
+					</a>
+				</div>
+			</div>
+		),
+	},
+	{
+		key: 2,
+		content: (
+			<div
+				className={styles.sectionFourSliderItem}
+				style={{ transform: "translateY(5%)" }}
+			>
+				<div>
+					<h3 className={styles.headerThree}>
+						CGI Staking Unlock the Power of Your CGI Tokens
+					</h3>
+					<p className={styles.paragraph}>
+						Join the CardanoGPT staking journey and transform your
+						CGI tokens into a key to exclusive benefits within our
+						ecosystem. By staking CGI, you not only earn rewards but
+						also gain special access and privileges.
+					</p>
+				</div>
+				<div>
+					<p className={styles.paragraph}>locked staking mechanism</p>
+					<div
+						className={
+							styles.sectionFourSliderItemBDivBSubTextContainer
+						}
+					>
+						<h6>Transferable staking keys</h6>
+						<p className={styles.paragraph}>
+							Beyond staking, your stake keys is transferable,
+							allowing you to sell on secondary markets and pass
+							on the staking benefits to new holders.
+						</p>
+						<LineOne />
+					</div>
+					<a href="#" className="anchor-link">
+						<Button variant="A">CGI staking coming soon</Button>
+					</a>
+				</div>
+			</div>
+		),
+	},
+];
 
 export default function Home() {
 	// initialize animation
@@ -59,9 +153,9 @@ export default function Home() {
 				</section>
 				<section className={styles.sectionThree}>
 					<span className={styles.headerPills}>our solutions</span>
-					<h2 className={styles.headerThree}>
+					<h3 className={styles.headerThree}>
 						unlock unprecedented possibilities with cardanoGPT
-					</h2>
+					</h3>
 					<div className={styles.sectionThreeGrid}>
 						<div>
 							<div>
@@ -154,6 +248,120 @@ export default function Home() {
 								<a href="#" className="anchor-link">
 									<Button variant="A">Learn more</Button>
 								</a>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section className={styles.sectionFour}>
+					<div className={styles.sectionFourTextContainer}>
+						<span className={styles.headerPills}>
+							Our ecosystem
+						</span>
+						<h3 className={styles.headerThree}>
+							At the heart of cardanoGPT ecosystem is the CGI
+							token
+						</h3>
+						<p className={styles.paragraph}>
+							The utility token and key to accessing all
+							cardanoGPT Al products, staking and inclusive
+							CardanoGPT DAO.
+						</p>
+					</div>
+					<div className={styles.sectionFourSliderContainer}>
+						<div className={styles.carousel}>
+							<VerticalCarousel
+								slides={slides}
+								offsetRadius={4}
+								showNavigation={false}
+								animationConfig={config.gentle}
+							/>
+						</div>
+						<div className={styles.carouselTabletAndMobile}>
+							<div className={styles.sectionFourSliderItem}>
+								<div>
+									<h3 className={styles.headerThree}>
+										Providing Liquidity and Farming CGI
+									</h3>
+								</div>
+								<div>
+									<p className={styles.paragraph}>
+										CardanoGPT offers users the opportunity
+										to participate in decentralized finance
+										(DeFi) activities. By providing
+										liquidity to CGI liquidity pool and
+										engaging in yield farming, users can
+										earn rewards in CGI & WRT tokens while
+										supporting CGI token liquidity.
+									</p>
+									<a href="#" className="anchor-link">
+										<Button variant="A">
+											Farm CGI on Wingriders
+										</Button>
+									</a>
+								</div>
+							</div>
+							<div className={styles.sectionFourSliderItem}>
+								<div>
+									<h3 className={styles.headerThree}>
+										CGI Staking Unlock the Power of Your CGI
+										Tokens
+									</h3>
+									<p className={styles.paragraph}>
+										Join the CardanoGPT staking journey and
+										transform your CGI tokens into a key to
+										exclusive benefits within our ecosystem.
+										By staking CGI, you not only earn
+										rewards but also gain special access and
+										privileges.
+									</p>
+								</div>
+								<div>
+									<p className={styles.paragraph}>
+										locked staking mechanism
+									</p>
+									<div
+										className={
+											styles.sectionFourSliderItemBDivBSubTextContainer
+										}
+									>
+										<h6>Transferable staking keys</h6>
+										<p className={styles.paragraph}>
+											Beyond staking, your stake keys is
+											transferable, allowing you to sell
+											on secondary markets and pass on the
+											staking benefits to new holders.
+										</p>
+										<LineOne />
+									</div>
+									<a href="#" className="anchor-link">
+										<Button variant="A">
+											CGI staking coming soon
+										</Button>
+									</a>
+								</div>
+							</div>
+							<div className={styles.sectionFourSliderItem}>
+								<div>
+									<h3 className={styles.headerThree}>
+										Governance & Decision-Making
+									</h3>
+								</div>
+								<div>
+									<p className={styles.paragraph}>
+										CGI token holders who engage in staking
+										are afforded the opportunity to actively
+										participate in the governance of the
+										CardanoGPT ecosystem. As members of the
+										DAO, they are empowered to propose,
+										deliberate upon, and cast votes on
+										pivotal changes, enhancements, and
+										strategic directions. This functionality
+										underscores the importance of community
+										involvement, ensuring that stakeholders
+										have a significant voice in determining
+										the future trajectory of CardanoGPT.
+									</p>
+								</div>
 							</div>
 						</div>
 					</div>

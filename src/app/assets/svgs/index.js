@@ -5,6 +5,7 @@ import XIcon from "./xIcon.svg";
 import Close from "./close.svg";
 import Hamburger from "./hamburger.svg";
 import SectionOneImage from "./sectionOneImage.svg";
+import LineOne from "./lineOne.svg";
 
 export {
 	DiscordIcon,
@@ -14,4 +15,5 @@ export {
 	Hamburger,
 	Close,
 	SectionOneImage,
+	LineOne,
 };

@@ -16,6 +16,7 @@
 	--app-color-gray-f: #edfcea66;
 	--app-color-gray-g: #70707066;
 	--app-color-gray-h: #e8e8e899;
+	--app-color-gray-i: #141414;
 	--app-color-white-a: #ffffff;
 	--app-color-white-b: #ffffff66;
 	--app-color-gradient-a: linear-gradient(
@@ -30,9 +31,9 @@
 	);
 	--app-color-gradient-c: linear-gradient(180deg, #8174ff 0%, #110f27 51.72%);
 	--app-color-gradient-d: linear-gradient(
-		90.44deg,
-		#8174ff 1.46%,
-		#1656b9 100%
+		91.9deg,
+		#edfcea 1.89%,
+		#49df28 99.49%
 	);
 	--app-color-gradient-e: linear-gradient(
 		91.9deg,
