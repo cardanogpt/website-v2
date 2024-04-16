@@ -381,6 +381,63 @@
 	margin-top: 1.2rem;
 }
 
+.sectionSix {
+	max-width: 60.625rem;
+	padding: 0rem 2rem;
+	margin: 0 auto;
+	margin-bottom: 5rem;
+}
+
+.partners > h4 {
+	text-align: center;
+	font-size: 1.125rem;
+	line-height: 1.35rem;
+	font-weight: 400;
+	color: var(--app-color-white-b);
+	text-transform: capitalize;
+}
+
+.partners h4 span {
+	font-weight: 700;
+	color: var(--app-color-white-a);
+}
+
+.partners h4 span:first-of-type {
+	background: var(--app-color-gradient-a);
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+}
+
+.partners h4 span:last-of-type {
+	background: var(--app-color-gradient-b);
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+}
+
+.partners svg {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	margin-top: 0.2rem;
+}
+
+.partnersImage {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	column-gap: 4.5rem;
+	row-gap: 3rem;
+	margin-top: 3rem;
+	opacity: 0.3;
+}
+
+.partnersImage img {
+	flex-shrink: 0;
+}
+
 @media all and (min-width: 768px) {
 	.sectionOne {
 		padding: 6rem 2rem;
@@ -582,6 +639,11 @@
 		column-gap: 2rem;
 		margin-top: 6rem;
 		margin-bottom: 4rem;
+	}
+
+	.sectionSix {
+		padding: 0rem 0rem;
+		margin-bottom: 9rem;
 	}
 }
 

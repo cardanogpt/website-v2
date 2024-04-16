@@ -19,9 +19,15 @@ import {
 	EcoSystemStats9,
 	LineOne,
 	SectionOneImage,
+	UnderLine,
+	bitcoinist,
+	businessInsider,
+	cryptoslate,
 	gridImageOne,
 	gridImageThree,
 	gridImageTwo,
+	thedailyhodl,
+	utoday,
 } from "./assets";
 import { config } from "react-spring";
 
@@ -350,6 +356,52 @@ export default function Home() {
 								Dive into our Tokenomics
 							</Button>
 						</a>
+					</div>
+				</section>
+				<section className={styles.sectionSix}>
+					<div className={styles.partners}>
+						<h4>
+							CardanoGPT <span>on the media</span> and{" "}
+							<span>partners with</span>
+						</h4>
+						<UnderLine />
+						<div className={styles.partnersImage}>
+							<Image
+								src={bitcoinist}
+								alt="bitcoinist.png"
+								placeholder="blur"
+								width={81}
+								height={41}
+							/>
+							<Image
+								src={businessInsider}
+								alt="businessInsider.png"
+								placeholder="blur"
+								width={85}
+								height={41}
+							/>
+							<Image
+								src={cryptoslate}
+								alt="cryptoslate.png"
+								placeholder="blur"
+								width={114}
+								height={41}
+							/>
+							<Image
+								src={utoday}
+								alt="utoday.png"
+								placeholder="blur"
+								width={155}
+								height={41}
+							/>
+							<Image
+								src={thedailyhodl}
+								alt="thedailyhodl.png"
+								placeholder="blur"
+								width={247}
+								height={41}
+							/>
+						</div>
 					</div>
 				</section>
 			</main>
