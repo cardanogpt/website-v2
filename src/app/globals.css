@@ -19,17 +19,19 @@
 	--app-color-gray-i: #141414;
 	--app-color-white-a: #ffffff;
 	--app-color-white-b: #ffffff66;
+	--app-color-white-c: #ffffffb3;
+	--app-color-white-d: #fbfbfb;
 	--app-color-gradient-a: linear-gradient(
 		91.9deg,
 		#edfcea 1.89%,
 		#707070 99.49%
 	);
 	--app-color-gradient-b: linear-gradient(
-		90.44deg,
-		#8174ff 1.46%,
-		#1656b9 100%
+		91.9deg,
+		rgba(237, 252, 234, 0.8) 1.89%,
+		rgba(112, 112, 112, 0.8) 99.49%
 	);
-	--app-color-gradient-c: linear-gradient(180deg, #8174ff 0%, #110f27 51.72%);
+	--app-color-gradient-c: linear-gradient(180deg, #ffffff 0%, #49df28 100%);
 	--app-color-gradient-d: linear-gradient(
 		91.9deg,
 		#edfcea 1.89%,

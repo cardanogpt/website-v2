@@ -239,6 +239,148 @@
 	display: none;
 }
 
+.sectionFive {
+	padding: 0rem 1.5rem;
+	margin-bottom: 6rem;
+}
+
+.sectionFiveA {
+	display: grid;
+	max-width: 59.5rem;
+	margin: 0 auto;
+}
+
+.statsHeader {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 2rem;
+	background: var(--app-color-gray-e);
+	padding: 3rem 1rem;
+	border-radius: 2.778rem;
+	margin: 2rem 0rem;
+}
+
+.statsHeader h1 {
+	color: var(--app-color-white-a);
+	background: var(--app-color-gradient-c);
+	font-size: 2.625rem;
+	font-weight: 600;
+	line-height: 3.088rem;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	text-align: center;
+}
+
+.statsHeader h2 {
+	color: var(--app-color-white-c);
+	font-size: 0.85rem;
+	font-weight: 400;
+	line-height: 1.081rem;
+	margin-bottom: 0.7rem;
+	text-align: center;
+}
+
+.statsHeaderSectionOnePartSecondDiv {
+	margin-top: 2.5rem;
+}
+
+.statsHeaderSectionOnePartSecondDiv h1 {
+	background: var(--app-color-gradient-b);
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+}
+
+.statsHeaderSmallGrid {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	row-gap: 2rem;
+}
+
+.statsHeaderSmallGrid h3 {
+	font-size: 1.25rem;
+	line-height: 1.75rem;
+	font-weight: 600;
+	color: var(--app-color-gray-c);
+	text-align: center;
+}
+
+.statsHeaderSmallGrid div:last-of-type {
+	grid-column-start: span 2;
+	overflow: hidden;
+}
+
+.statsHeaderSmallGrid h4 {
+	font-size: 0.75rem;
+	line-height: 1.05rem;
+	font-weight: 300;
+	color: var(--app-color-white-c);
+	margin-bottom: 0.5rem;
+	text-align: center;
+}
+
+.sectionFiveB {
+	display: flex;
+	column-gap: 1rem;
+	width: 100%;
+	max-width: 82rem;
+	margin: 2rem auto;
+	overflow-x: scroll;
+	scrollbar-width: none; /* hide scrollbar for Firefox */
+	-ms-overflow-style: none; /* hide scrollbar for IE/Edge */
+	scrollbar-color: transparent transparent;
+}
+
+.sectionFiveB::-webkit-scrollbar {
+	display: none; /* hide scrollbar for Chrome, Safari, and Opera */
+}
+
+.ecosystemStatsCard {
+	flex-shrink: 0;
+	text-align: center;
+	color: var(--app-color-white-d);
+	width: 7.313rem;
+}
+
+.ecosystemStatsCard h5 {
+	font-size: 1rem;
+	font-weight: 400;
+}
+
+.ecosystemStatsCard h6 {
+	font-size: 0.75rem;
+	font-weight: 400;
+	line-height: 0.9rem;
+}
+
+.ecosystemStatsCard svg {
+	display: inline-block;
+	margin-top: 1rem;
+}
+
+.sectionFiveB ~ div {
+	text-align: center;
+}
+
+.ecosystemStatsCard:nth-child(n + 2):nth-child(-n + 4) {
+	margin-top: 1rem;
+}
+
+.ecosystemStatsCard:nth-child(5),
+.ecosystemStatsCard:nth-child(8) {
+	margin-top: 2.7rem;
+}
+
+.ecosystemStatsCard:nth-child(7) {
+	margin-top: 1.8rem;
+}
+
+.ecosystemStatsCard:nth-child(6),
+.ecosystemStatsCard:nth-child(9) {
+	margin-top: 1.2rem;
+}
+
 @media all and (min-width: 768px) {
 	.sectionOne {
 		padding: 6rem 2rem;
@@ -348,7 +490,7 @@
 	}
 
 	.sectionFour {
-		padding: 4.5rem 5% 9rem 5%;
+		padding: 4.5rem 5% 6rem 5%;
 		overflow: hidden;
 	}
 
@@ -401,6 +543,45 @@
 	.sectionFourSliderItemBDivBSubTextContainer > svg {
 		display: block;
 		margin-top: 1rem;
+	}
+
+	.sectionFive {
+		padding: 0rem 1.5rem;
+		margin-bottom: 8rem;
+	}
+
+	.sectionFive .headerThree {
+		width: 72%;
+	}
+
+	.statsHeader {
+		grid-template-columns: 50% 50%;
+		gap: 0rem;
+		padding: 4rem 2rem;
+		margin: 3rem 0rem;
+	}
+
+	.statsHeader h1 {
+		font-size: 3.625rem;
+		line-height: 4.088rem;
+		text-align: left;
+	}
+
+	.statsHeader h2 {
+		font-size: 1rem;
+		line-height: 1.481rem;
+		text-align: left;
+	}
+
+	.statsHeaderSmallGrid h3,
+	.statsHeaderSmallGrid h4 {
+		text-align: left;
+	}
+
+	.sectionFiveB {
+		column-gap: 2rem;
+		margin-top: 6rem;
+		margin-bottom: 4rem;
 	}
 }
 
@@ -457,13 +638,31 @@
 	}
 
 	.sectionFourSliderItem:nth-of-type(2) > div:first-of-type p {
-		width: 90%;
+		width: 70%;
 		margin-left: 0;
 		margin-right: 0;
 	}
 
 	.sectionFourSliderItem:nth-of-type(2) > div:last-of-type {
 		width: 40%;
+	}
+
+	.sectionFive {
+		padding: 0rem 4rem;
+	}
+
+	.sectionFive .headerThree {
+		width: 55%;
+	}
+
+	.statsHeader h1 {
+		font-size: 4.625rem;
+		line-height: 5.088rem;
+	}
+
+	.statsHeader h2 {
+		font-size: 1.5rem;
+		line-height: 2.081rem;
 	}
 }
 
@@ -529,5 +728,25 @@
 
 	.carouselTabletAndMobile {
 		display: none;
+	}
+
+	.sliderLastElemenFirstParagraph {
+		width: 80% !important;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.sectionFive {
+		padding: 4rem 0rem 0rem 0rem;
+	}
+
+	.sectionFive .headerThree {
+		width: 50%;
+	}
+
+	.statsHeader {
+		padding: 5rem 6rem;
+		gap: 4rem;
+		margin: 3rem 0rem 2rem 0rem;
 	}
 }
