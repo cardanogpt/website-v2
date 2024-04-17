@@ -7,6 +7,7 @@
 	--app-color-green-d: #49df2805;
 	--app-color-green-e: #49df2833;
 	--app-color-green-f: #caf6c11a;
+	--app-color-green-h: #142811;
 	--app-color-yellow-a: #e6dc0b14;
 	--app-color-gray-a: #b8b8b8;
 	--app-color-gray-b: #e8e8e8;
@@ -42,6 +43,12 @@
 		rgba(41, 41, 41, 0.3) 1.89%,
 		rgba(237, 252, 234, 0.3) 49.77%,
 		rgba(41, 41, 41, 0.3) 99.49%
+	);
+	--app-color-gradient-f: linear-gradient(180deg, #edfcea 0%, #92ec7e 100%);
+	--app-color-gradient-g: linear-gradient(
+		180deg,
+		rgba(237, 252, 234, 0.2) 0%,
+		rgba(146, 236, 126, 0.2) 100%
 	);
 }
 

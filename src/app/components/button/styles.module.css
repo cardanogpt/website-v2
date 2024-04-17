@@ -1,6 +1,6 @@
 .button {
-	border: 0.06rem solid;
-	border-radius: 0.347rem;
+	position: relative;
+	border: none;
 	padding: 1rem 1.75rem;
 	cursor: pointer;
 	background: none;
@@ -8,33 +8,56 @@
 	font-size: 0.875rem;
 	font-weight: 600;
 	transition: transform 0.5s;
+	border-radius: 0.347rem;
 }
 
 .button div {
+	position: relative;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	gap: 0.7rem;
+	z-index: 2;
 }
 
 .button:hover {
 	transform: scale(1.02);
 }
 
+.button::after {
+	position: absolute;
+	content: "";
+	width: 98.5%;
+	height: 95.5%;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	border-radius: 0.347rem;
+	margin: auto;
+}
+
 .button.variantA {
-	border-width: 0.125rem;
-	border-color: var(--app-color-green-b);
-	background: inherit;
+	background: var(--app-color-gradient-g);
+}
+
+.button.variantA::after {
+	background: var(--app-color-gray-i);
 }
 
 .button.variantB {
-	position: relative;
-	border: none;
-	background: var(--app-color-green-a);
 	color: var(--app-color-black-a);
+	background: var(--app-color-gradient-f);
+}
+
+.button.variantB::after {
+	background: var(--app-color-green-a);
 }
 
 .button.variantC {
-	border-color: var(--app-color-green-a);
-	background: var(--app-color-green-b);
+	background: var(--app-color-gradient-f);
+}
+
+.button.variantC::after {
+	background: var(--app-color-green-h);
 }
