@@ -35,6 +35,7 @@ import {
 	utoday,
 } from "./assets";
 import { config } from "react-spring";
+import CountUp from "react-countup";
 
 export default function Home() {
 	// initialize animation
@@ -48,7 +49,9 @@ export default function Home() {
 			<main className={styles.main}>
 				<section className={styles.sectionOne}>
 					<div>
-						<h1>harnessing the potential of AI </h1>
+						<h1 data-aos="fade-up">
+							harnessing the potential of AI{" "}
+						</h1>
 						<p>
 							to drive web3 initiatives and communities forward.
 						</p>
@@ -72,12 +75,15 @@ export default function Home() {
 							</a>
 						</div>
 					</div>
-					<SectionOneImage className={styles.sectionOneImage} />
+					<SectionOneImage
+						className={styles.sectionOneImage}
+						data-aos="zoom-in"
+					/>
 				</section>
 				<section className={styles.sectionTwo}>
 					<div className={styles.sectionTwoContent}>
 						<span className={styles.headerPills}>our mission</span>
-						<h2 className={styles.headerTwo}>
+						<h2 className={styles.headerTwo} data-aos="fade-up">
 							dedicated to pioneering the integration of
 							artificial intelligence on the blockchain
 						</h2>
@@ -93,7 +99,7 @@ export default function Home() {
 				</section>
 				<section className={styles.sectionThree} id="solutions">
 					<span className={styles.headerPills}>our solutions</span>
-					<h3 className={styles.headerThree}>
+					<h3 className={styles.headerThree} data-aos="fade-up">
 						unlock unprecedented possibilities with cardanoGPT
 					</h3>
 					<div className={styles.sectionThreeGrid}>
@@ -213,7 +219,7 @@ export default function Home() {
 						<span className={styles.headerPills}>
 							Our ecosystem
 						</span>
-						<h3 className={styles.headerThree}>
+						<h3 className={styles.headerThree} data-aos="fade-up">
 							At the heart of cardanoGPT ecosystem is the CGI
 							token
 						</h3>
@@ -329,14 +335,22 @@ export default function Home() {
 				<section className={styles.sectionFive}>
 					<div className={styles.sectionFiveA}>
 						<span className={styles.headerPills}>CGI Token</span>
-						<h3 className={styles.headerThree}>
+						<h3 className={styles.headerThree} data-aos="fade-up">
 							Powering the CardanoGPT Ecosystem
 						</h3>
 						<div className={styles.statsHeader}>
 							<div>
 								<div>
 									<h2>CGI Total Supply</h2>
-									<h1>10 Million</h1>
+									<h1>
+										<CountUp
+											start={1}
+											end={10}
+											duration={3}
+											enableScrollSpy={true}
+										/>{" "}
+										Million
+									</h1>
 								</div>
 								<div
 									className={
@@ -344,7 +358,16 @@ export default function Home() {
 									}
 								>
 									<h2>Burnt $CGI</h2>
-									<h1>5 Million</h1>
+									<h1>
+										{" "}
+										<CountUp
+											start={1}
+											end={5}
+											duration={3}
+											enableScrollSpy={true}
+										/>{" "}
+										Million
+									</h1>
 								</div>
 							</div>
 							<div className={styles.statsHeaderSmallGrid}>
@@ -362,7 +385,16 @@ export default function Home() {
 								</div>
 								<div>
 									<h4>Burnt $CGI</h4>
-									<h3>5 Million</h3>
+									<h3>
+										{" "}
+										<CountUp
+											start={1}
+											end={5}
+											duration={3}
+											enableScrollSpy={true}
+										/>{" "}
+										Million
+									</h3>
 								</div>
 								<div>
 									<h4>Policy ID</h4>
@@ -376,16 +408,27 @@ export default function Home() {
 						</div>
 					</div>
 					<div className={styles.sectionFiveB}>
-						{ecosystemStats.map(({ name, percentage, Svg }) => (
-							<div
-								key={name}
-								className={styles.ecosystemStatsCard}
-							>
-								<h5>{percentage}</h5>
-								<h6>{name}</h6>
-								<Svg />
-							</div>
-						))}
+						{ecosystemStats.map(
+							({ name, percentage, Svg }, index) => (
+								<div
+									key={name}
+									className={styles.ecosystemStatsCard}
+								>
+									<h5>
+										<CountUp
+											start={1}
+											end={percentage}
+											duration={3}
+											delay={index}
+											suffix="%"
+											enableScrollSpy={true}
+										/>
+									</h5>
+									<h6>{name}</h6>
+									<Svg />
+								</div>
+							)
+						)}
 					</div>
 					<div>
 						<a
@@ -413,6 +456,9 @@ export default function Home() {
 								placeholder="blur"
 								width={81}
 								height={41}
+								data-aos="fade-down"
+								data-aos-easing="ease-in-out"
+								data-aos-delay="50"
 							/>
 							<Image
 								src={businessInsider}
@@ -420,6 +466,9 @@ export default function Home() {
 								placeholder="blur"
 								width={85}
 								height={41}
+								data-aos="fade-down"
+								data-aos-easing="ease-in-out"
+								data-aos-delay="150"
 							/>
 							<Image
 								src={cryptoslate}
@@ -427,6 +476,9 @@ export default function Home() {
 								placeholder="blur"
 								width={114}
 								height={41}
+								data-aos="fade-down"
+								data-aos-easing="ease-in-out"
+								data-aos-delay="250"
 							/>
 							<Image
 								src={utoday}
@@ -434,6 +486,9 @@ export default function Home() {
 								placeholder="blur"
 								width={155}
 								height={41}
+								data-aos="fade-down"
+								data-aos-easing="ease-in-out"
+								data-aos-delay="350"
 							/>
 							<Image
 								src={thedailyhodl}
@@ -441,6 +496,9 @@ export default function Home() {
 								placeholder="blur"
 								width={247}
 								height={41}
+								data-aos="fade-down"
+								data-aos-easing="ease-in-out"
+								data-aos-delay="450"
 							/>
 						</div>
 					</div>
@@ -452,19 +510,19 @@ export default function Home() {
 }
 
 const ecosystemStats = [
-	{ name: "Airdrop", percentage: "6%", Svg: EcoSystemStats1 },
-	{ name: "Private Sale", percentage: "20%", Svg: EcoSystemStats2 },
-	{ name: "Presale", percentage: "7.2%", Svg: EcoSystemStats3 },
-	{ name: "Dex Liquidity", percentage: "6.8%", Svg: EcoSystemStats4 },
-	{ name: "Farming Rewards", percentage: "20%", Svg: EcoSystemStats5 },
+	{ name: "Airdrop", percentage: 6, Svg: EcoSystemStats1 },
+	{ name: "Private Sale", percentage: 20, Svg: EcoSystemStats2 },
+	{ name: "Presale", percentage: 7.2, Svg: EcoSystemStats3 },
+	{ name: "Dex Liquidity", percentage: 6.8, Svg: EcoSystemStats4 },
+	{ name: "Farming Rewards", percentage: 20, Svg: EcoSystemStats5 },
 	{
 		name: "Research & Development (R&D)",
-		percentage: "14%",
+		percentage: 14,
 		Svg: EcoSystemStats6,
 	},
-	{ name: "Marketing", percentage: "10%", Svg: EcoSystemStats7 },
-	{ name: "Reserve", percentage: "6%", Svg: EcoSystemStats8 },
-	{ name: "Team & Partnership", percentage: "10%", Svg: EcoSystemStats9 },
+	{ name: "Marketing", percentage: 10, Svg: EcoSystemStats7 },
+	{ name: "Reserve", percentage: 6, Svg: EcoSystemStats8 },
+	{ name: "Team & Partnership", percentage: 10, Svg: EcoSystemStats9 },
 ];
 
 const slides = [

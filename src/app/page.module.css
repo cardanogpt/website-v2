@@ -148,6 +148,7 @@
 }
 
 .sectionThreeGrid > div {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -156,6 +157,26 @@
 	background: var(--app-color-gray-e);
 	padding: 3rem 1.5rem;
 	gap: 2rem;
+}
+
+.sectionThreeGrid > div::before,
+.statsHeader::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: linear-gradient(
+		to right,
+		transparent 0%,
+		#6f6e6614 50%,
+		transparent 100%
+	);
+	background-size: 200% 100%;
+	border-radius: 2.778rem;
+	animation: shimmer 8s infinite linear;
+	z-index: -1;
 }
 
 .sectionThreeGrid > div p {
@@ -253,6 +274,7 @@
 }
 
 .statsHeader {
+	position: relative;
 	display: grid;
 	grid-template-columns: 1fr;
 	gap: 2rem;
@@ -812,5 +834,14 @@
 		padding: 5rem 6rem;
 		gap: 4rem;
 		margin: 3rem 0rem 2rem 0rem;
+	}
+}
+
+@keyframes shimmer {
+	0% {
+		background-position: -200%;
+	}
+	100% {
+		background-position: 200%;
 	}
 }
