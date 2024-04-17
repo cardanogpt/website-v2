@@ -45,13 +45,15 @@
 	margin-top: 2.5rem;
 	display: flex;
 	justify-content: center;
-	gap: 1rem;
+	gap: 1.2rem;
 	flex-wrap: wrap;
 	z-index: 5;
 }
 
 .sectionOne button {
+	display: block;
 	padding: 1rem 1.5rem;
+	height: 100%;
 }
 
 .sectionOneImage {

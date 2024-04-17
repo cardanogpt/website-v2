@@ -7,6 +7,9 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { Button, Footer, Header, VerticalCarousel } from "./components";
 import {
+	BUY_CGI,
+	DISCORD_LINK,
+	DOCS_LINK,
 	DiscordIcon,
 	EcoSystemStats1,
 	EcoSystemStats2,
@@ -17,7 +20,9 @@ import {
 	EcoSystemStats7,
 	EcoSystemStats8,
 	EcoSystemStats9,
+	FARM_CGI,
 	LineOne,
+	MEDIUM_LINK,
 	SectionOneImage,
 	UnderLine,
 	bitcoinist,
@@ -48,11 +53,23 @@ export default function Home() {
 							to drive web3 initiatives and communities forward.
 						</p>
 						<div className={styles.sectionOneButtons}>
-							<Button variant="B">Buy CGI</Button>
-							<Button variant="C">
-								<DiscordIcon />
-								<span>Join Discord</span>
-							</Button>
+							<a
+								href={BUY_CGI}
+								target="_blank"
+								className="anchor-link"
+							>
+								<Button variant="B">Buy CGI</Button>
+							</a>
+							<a
+								href={DISCORD_LINK}
+								target="_blank"
+								className="anchor-link"
+							>
+								<Button variant="C">
+									<DiscordIcon />
+									<span>Join Discord</span>
+								</Button>
+							</a>
 						</div>
 					</div>
 					<SectionOneImage className={styles.sectionOneImage} />
@@ -74,7 +91,7 @@ export default function Home() {
 						</p>
 					</div>
 				</section>
-				<section className={styles.sectionThree}>
+				<section className={styles.sectionThree} id="solutions">
 					<span className={styles.headerPills}>our solutions</span>
 					<h3 className={styles.headerThree}>
 						unlock unprecedented possibilities with cardanoGPT
@@ -93,7 +110,11 @@ export default function Home() {
 									more. Exclusive access for CGI token holders
 									(meeting threshold).
 								</p>
-								<a href="#" className="anchor-link">
+								<a
+									href={DISCORD_LINK}
+									target="_blank"
+									className="anchor-link"
+								>
 									<Button variant="A">
 										Join Girolamo Beta Testers
 									</Button>
@@ -120,7 +141,11 @@ export default function Home() {
 									like social media management, customer
 									service, and data analysis.
 								</p>
-								<a href="#" className="anchor-link">
+								<a
+									href={`${DOCS_LINK}/custom-bot-development`}
+									target="_blank"
+									className="anchor-link"
+								>
 									<Button variant="A">Learn more</Button>
 								</a>
 							</div>
@@ -143,7 +168,11 @@ export default function Home() {
 									stay updated on the Cardano ecosystem, all
 									within X.
 								</p>
-								<a href="#" className="anchor-link">
+								<a
+									href={`${MEDIUM_LINK}/cardanogpt-successfully-launches-the-first-internet-enabled-cardano-focused-chatbot-on-x-72f4fb3ef0eb`}
+									target="_blank"
+									className="anchor-link"
+								>
 									<Button variant="A">Learn more</Button>
 								</a>
 							</div>
@@ -168,14 +197,18 @@ export default function Home() {
 									empowers bloggers, marketers, and businesses
 									to craft high-impact content.
 								</p>
-								<a href="#" className="anchor-link">
+								<a
+									href={`${MEDIUM_LINK}/unveiling-the-future-of-content-creation-cardanogpt-ai-powered-writing-platform-on-web3-0-bae569c9d6e4`}
+									target="_blank"
+									className="anchor-link"
+								>
 									<Button variant="A">Learn more</Button>
 								</a>
 							</div>
 						</div>
 					</div>
 				</section>
-				<section className={styles.sectionFour}>
+				<section className={styles.sectionFour} id="ecosystem">
 					<div className={styles.sectionFourTextContainer}>
 						<span className={styles.headerPills}>
 							Our ecosystem
@@ -216,7 +249,11 @@ export default function Home() {
 										earn rewards in CGI & WRT tokens while
 										supporting CGI token liquidity.
 									</p>
-									<a href="#" className="anchor-link">
+									<a
+										href={FARM_CGI}
+										target="_blank"
+										className="anchor-link"
+									>
 										<Button variant="A">
 											Farm CGI on Wingriders
 										</Button>
@@ -351,7 +388,11 @@ export default function Home() {
 						))}
 					</div>
 					<div>
-						<a href="#" className="anchor-link">
+						<a
+							href={`${DOCS_LINK}/tokenomics-and-distribution`}
+							target="_blank"
+							className="anchor-link"
+						>
 							<Button variant="A">
 								Dive into our Tokenomics
 							</Button>
@@ -469,7 +510,7 @@ const slides = [
 						farming, users can earn rewards in CGI & WRT tokens
 						while supporting CGI token liquidity.
 					</p>
-					<a href="#" className="anchor-link">
+					<a href={FARM_CGI} target="_blank" className="anchor-link">
 						<Button variant="A">Farm CGI on Wingriders</Button>
 					</a>
 				</div>

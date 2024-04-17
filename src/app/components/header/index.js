@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import styles from "./styles.module.css";
-import { Close, Hamburger, logo } from "@/app/assets";
+import { BUY_CGI, Close, DOCS_LINK, Hamburger, logo } from "@/app/assets";
 import { Button } from "../button";
 import Link from "next/link";
 
@@ -28,11 +28,13 @@ export const Header = () => {
 							<Link href="#ecosystem">Ecosystem</Link>
 						</li>
 						<li>
-							<Link href="#docs">Docs</Link>
+							<a href={DOCS_LINK} target="_blank">
+								Docs
+							</a>
 						</li>
 					</ul>
 				</nav>
-				<a href="#" className={`anchor-link`} target="_blank">
+				<a href={BUY_CGI} className={`anchor-link`} target="_blank">
 					<Button variant="C">Buy CGI</Button>
 				</a>
 			</header>
@@ -60,10 +62,12 @@ export const Header = () => {
 							<Link href="#ecosystem">Ecosystem</Link>
 						</li>
 						<li onClick={() => setShowMobile(false)}>
-							<Link href="#docs">Docs</Link>
+							<a href={DOCS_LINK} target="_blank">
+								Docs
+							</a>
 						</li>
 					</ul>
-					<a href="#" className={`anchor-link`} target="_blank">
+					<a href={BUY_CGI} className={`anchor-link`} target="_blank">
 						<Button variant="C">Buy CGI</Button>
 					</a>
 				</nav>
