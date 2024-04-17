@@ -1,24 +1,7 @@
 import React from "react";
-import styled from "@emotion/styled";
 import { Spring } from "react-spring/renderprops";
 import { withGesture } from "react-with-gesture";
-
-const SlideContainer = styled.div`
-	position: absolute;
-	top: 50%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	transform-origin: 50% 50%;
-	z-index: 10;
-`;
-
-const SlideCard = styled.div`
-	position: relative;
-	align-items: center;
-	justify-content: center;
-	transform-origin: 50% 50%;
-`;
+import componentStyles from "./styles.module.css";
 
 function Slide({
 	content,
@@ -62,16 +45,20 @@ function Slide({
 	return (
 		<Spring to={styles[index]} config={animationConfig}>
 			{(style) => (
-				<SlideContainer
+				<div
+					className={componentStyles.slideContainer}
 					style={{
 						...style,
 						zIndex: Math.abs(Math.abs(offsetFromMiddle) - 10),
 					}}
 				>
-					<SlideCard onClick={() => moveSlide(offsetFromMiddle)}>
+					<div
+						className={componentStyles.slideCard}
+						onClick={() => moveSlide(offsetFromMiddle)}
+					>
 						{content}
-					</SlideCard>
-				</SlideContainer>
+					</div>
+				</div>
 			)}
 		</Spring>
 	);
