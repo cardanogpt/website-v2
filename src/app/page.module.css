@@ -60,6 +60,14 @@
 	margin-top: 2rem;
 }
 
+.sectionOneImage > g {
+	animation: animateHomeSvgG 2s linear infinite;
+}
+
+.sectionOneImage > path {
+	animation: animateHomeSvgPath 2s linear infinite;
+}
+
 .sectionTwoContent {
 	display: grid;
 	padding: 0rem 1.8rem;
@@ -843,5 +851,41 @@
 	}
 	100% {
 		background-position: 200%;
+	}
+}
+
+@keyframes animateHomeSvgG {
+	0% {
+		transform: translate(0px);
+	}
+	25% {
+		transform: translate(5px);
+	}
+	50% {
+		transform: translate(15px);
+	}
+	75% {
+		transform: translate(5px);
+	}
+	100% {
+		transform: translate(0px);
+	}
+}
+
+@keyframes animateHomeSvgPath {
+	0% {
+		opacity: 0;
+	}
+	25% {
+		opacity: 0.25;
+	}
+	50% {
+		opacity: 0.5;
+	}
+	75% {
+		opacity: 0.25;
+	}
+	100% {
+		opacity: 0;
 	}
 }
