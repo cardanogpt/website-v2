@@ -135,6 +135,15 @@ export default function Home() {
 									placeholder="blur"
 								/>
 							</div>
+							<a
+								href={DISCORD_LINK}
+								target="_blank"
+								className="anchor-link"
+							>
+								<Button variant="A">
+									Join Girolamo Beta Testers
+								</Button>
+							</a>
 						</div>
 						<div>
 							<div>
@@ -164,6 +173,13 @@ export default function Home() {
 									placeholder="blur"
 								/>
 							</div>
+							<a
+								href={`${DOCS_LINK}/custom-bot-development`}
+								target="_blank"
+								className="anchor-link"
+							>
+								<Button variant="A">Learn more</Button>
+							</a>
 						</div>
 						<div>
 							<div>
@@ -191,6 +207,13 @@ export default function Home() {
 									placeholder="blur"
 								/>
 							</div>
+							<a
+								href={`${MEDIUM_LINK}/cardanogpt-successfully-launches-the-first-internet-enabled-cardano-focused-chatbot-on-x-72f4fb3ef0eb`}
+								target="_blank"
+								className="anchor-link"
+							>
+								<Button variant="A">Learn more</Button>
+							</a>
 						</div>
 						<div>
 							<div>
@@ -211,6 +234,13 @@ export default function Home() {
 									<Button variant="A">Learn more</Button>
 								</a>
 							</div>
+							<a
+								href={`${MEDIUM_LINK}/unveiling-the-future-of-content-creation-cardanogpt-ai-powered-writing-platform-on-web3-0-bae569c9d6e4`}
+								target="_blank"
+								className="anchor-link"
+							>
+								<Button variant="A">Learn more</Button>
+							</a>
 						</div>
 					</div>
 				</section>
@@ -450,56 +480,81 @@ export default function Home() {
 						</h4>
 						<UnderLine />
 						<div className={styles.partnersImage}>
-							<Image
-								src={bitcoinist}
-								alt="bitcoinist.png"
-								placeholder="blur"
-								width={81}
-								height={41}
-								data-aos="fade-down"
-								data-aos-easing="ease-in-out"
-								data-aos-delay="50"
-							/>
-							<Image
-								src={businessInsider}
-								alt="businessInsider.png"
-								placeholder="blur"
-								width={85}
-								height={41}
-								data-aos="fade-down"
-								data-aos-easing="ease-in-out"
-								data-aos-delay="150"
-							/>
-							<Image
-								src={cryptoslate}
-								alt="cryptoslate.png"
-								placeholder="blur"
-								width={114}
-								height={41}
-								data-aos="fade-down"
-								data-aos-easing="ease-in-out"
-								data-aos-delay="250"
-							/>
-							<Image
-								src={utoday}
-								alt="utoday.png"
-								placeholder="blur"
-								width={155}
-								height={41}
-								data-aos="fade-down"
-								data-aos-easing="ease-in-out"
-								data-aos-delay="350"
-							/>
-							<Image
-								src={thedailyhodl}
-								alt="thedailyhodl.png"
-								placeholder="blur"
-								width={247}
-								height={41}
-								data-aos="fade-down"
-								data-aos-easing="ease-in-out"
-								data-aos-delay="450"
-							/>
+							<a
+								href="https://bitcoinist.com/top-5-cardano-projects-to-look-out-for-in-2023/"
+								target="_blank"
+							>
+								<Image
+									src={bitcoinist}
+									alt="bitcoinist.png"
+									placeholder="blur"
+									width={81}
+									height={41}
+									data-aos="fade-down"
+									data-aos-easing="ease-in-out"
+									data-aos-delay="50"
+								/>
+							</a>
+							<a
+								href="https://markets.businessinsider.com/news/stocks/cardanogpt-an-innovative-cardano-project-looking-to-utilize-artificial-intelligence-to-increase-productivity-cardano-projects-1032531384"
+								target="_blank"
+							>
+								<Image
+									src={businessInsider}
+									alt="businessInsider.png"
+									placeholder="blur"
+									width={85}
+									height={41}
+									data-aos="fade-down"
+									data-aos-easing="ease-in-out"
+									data-aos-delay="150"
+								/>
+							</a>
+							<a
+								href="https://cryptoslate.com/cardano-enters-beta-test-phase-for-new-blockchain-based-ai-chat-bot-girolamo/"
+								target="_blank"
+							>
+								<Image
+									src={cryptoslate}
+									alt="cryptoslate.png"
+									placeholder="blur"
+									width={114}
+									height={41}
+									data-aos="fade-down"
+									data-aos-easing="ease-in-out"
+									data-aos-delay="250"
+								/>
+							</a>
+							<a
+								href="https://u.today/cardano-makes-ai-progress-with-first-internet-generative-chatbot"
+								target="_blank"
+							>
+								<Image
+									src={utoday}
+									alt="utoday.png"
+									placeholder="blur"
+									width={155}
+									height={41}
+									data-aos="fade-down"
+									data-aos-easing="ease-in-out"
+									data-aos-delay="350"
+								/>
+							</a>
+							<a
+								href="https://dailyhodl.com/2023/11/27/new-artificial-intelligence-ai-powered-chatbot-girolamo-launches-beta-phase-on-cardano-blockchain/"
+								target="_blank"
+							>
+								<Image
+									src={thedailyhodl}
+									alt="thedailyhodl.png"
+									placeholder="blur"
+									width={247}
+									height={41}
+									data-aos="fade-down"
+									data-aos-easing="ease-in-out"
+									data-aos-delay="450"
+								/>
+							</a>
 						</div>
 					</div>
 				</section>
