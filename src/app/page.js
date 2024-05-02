@@ -28,6 +28,7 @@ import {
 	bitcoinist,
 	businessInsider,
 	cryptoslate,
+	entrepreneur,
 	gridImageOne,
 	gridImageThree,
 	gridImageTwo,
@@ -117,7 +118,7 @@ export default function Home() {
 									(meeting threshold).
 								</p>
 								<a
-									href={DISCORD_LINK}
+									href={`${MEDIUM_LINK}/cardanogpt-has-successfully-deployed-its-generative-discord-chatbot-girolamo-on-beta-66454eef6b3a`}
 									target="_blank"
 									className="anchor-link"
 								>
@@ -136,7 +137,7 @@ export default function Home() {
 								/>
 							</div>
 							<a
-								href={DISCORD_LINK}
+								href={`${MEDIUM_LINK}/cardanogpt-has-successfully-deployed-its-generative-discord-chatbot-girolamo-on-beta-66454eef6b3a`}
 								target="_blank"
 								className="anchor-link"
 							>
@@ -547,6 +548,21 @@ export default function Home() {
 								<Image
 									src={thedailyhodl}
 									alt="thedailyhodl.png"
+									placeholder="blur"
+									width={247}
+									height={41}
+									data-aos="fade-down"
+									data-aos-easing="ease-in-out"
+									data-aos-delay="450"
+								/>
+							</a>
+							<a
+								href="https://www.entrepreneur.com/en-au/technology/fetchai-singularitynet-ocean-protocol-merger-sets-stage/472690"
+								target="_blank"
+							>
+								<Image
+									src={entrepreneur}
+									alt="entrepreneur.png"
 									placeholder="blur"
 									width={247}
 									height={41}

@@ -2,6 +2,7 @@ import React from "react";
 import Slide from "./Slide";
 import PropTypes from "prop-types";
 import styles from "./styles.module.css";
+import { Arrow } from "@/app/assets";
 
 function mod(a, b) {
 	return ((a % b) + b) % b;
@@ -16,7 +17,7 @@ class VerticalCarousel extends React.Component {
 	};
 
 	componentDidMount = () => {
-		this.intervalId = setInterval(() => this.moveSlide(-1), 6000);
+		this.intervalId = setInterval(() => this.moveSlide(-1), 15000);
 	};
 
 	componentWillUnmount() {
@@ -85,6 +86,14 @@ class VerticalCarousel extends React.Component {
 		return (
 			<React.Fragment>
 				<div className={styles.wrapper}>
+					<div className={styles.buttons}>
+						<button onClick={() => this.moveSlide(-1)}>
+							<Arrow />
+						</button>
+						<button onClick={() => this.moveSlide(1)}>
+							<Arrow />
+						</button>
+					</div>
 					{this.getPresentableSlides().map(
 						(slide, presentableIndex) => (
 							<Slide

@@ -7,6 +7,7 @@ import businessInsider from "./businessInsider.png";
 import cryptoslate from "./cryptoslate.png";
 import thedailyhodl from "./thedailyhodl.png";
 import utoday from "./utoday.png";
+import entrepreneur from "./entrepreneur.png";
 
 export {
 	logo,
@@ -18,4 +19,5 @@ export {
 	cryptoslate,
 	thedailyhodl,
 	utoday,
+	entrepreneur,
 };

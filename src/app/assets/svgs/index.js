@@ -16,6 +16,7 @@ import EcoSystemStats7 from "./ecosystemStats7.svg";
 import EcoSystemStats8 from "./ecosystemStats8.svg";
 import EcoSystemStats9 from "./ecosystemStats9.svg";
 import UnderLine from "./underline.svg";
+import Arrow from "./arrow.svg";
 
 export {
 	DiscordIcon,
@@ -36,4 +37,5 @@ export {
 	EcoSystemStats8,
 	EcoSystemStats9,
 	UnderLine,
+	Arrow,
 };
