@@ -565,7 +565,7 @@ export default function Home() {
 									alt="entrepreneur.png"
 									placeholder="blur"
 									width={136}
-									height={41.6}
+									height={41}
 									data-aos="fade-down"
 									data-aos-easing="ease-in-out"
 									data-aos-delay="550"
