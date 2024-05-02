@@ -17,7 +17,7 @@ class VerticalCarousel extends React.Component {
 	};
 
 	componentDidMount = () => {
-		this.intervalId = setInterval(() => this.moveSlide(-1), 15000);
+		this.intervalId = setInterval(() => this.moveSlide(-1), 10000);
 	};
 
 	componentWillUnmount() {

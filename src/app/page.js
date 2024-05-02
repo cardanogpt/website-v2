@@ -564,11 +564,11 @@ export default function Home() {
 									src={entrepreneur}
 									alt="entrepreneur.png"
 									placeholder="blur"
-									width={247}
-									height={41}
+									width={136}
+									height={51.6}
 									data-aos="fade-down"
 									data-aos-easing="ease-in-out"
-									data-aos-delay="450"
+									data-aos-delay="550"
 								/>
 							</a>
 						</div>
