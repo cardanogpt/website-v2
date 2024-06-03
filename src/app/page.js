@@ -37,6 +37,7 @@ import {
 } from "./assets";
 import { config } from "react-spring";
 import CountUp from "react-countup";
+import CookieConsent from "react-cookie-consent";
 
 export default function Home() {
 	// initialize animation
@@ -379,7 +380,11 @@ export default function Home() {
 											end={10}
 											duration={3}
 											enableScrollSpy={true}
-										/>{" "}
+										>
+											{({ countUpRef }) => (
+												<span ref={countUpRef} />
+											)}
+										</CountUp>{" "}
 										Million
 									</h1>
 								</div>
@@ -396,7 +401,11 @@ export default function Home() {
 											end={5}
 											duration={3}
 											enableScrollSpy={true}
-										/>{" "}
+										>
+											{({ countUpRef }) => (
+												<span ref={countUpRef} />
+											)}
+										</CountUp>{" "}
 										Million
 									</h1>
 								</div>
@@ -423,7 +432,11 @@ export default function Home() {
 											end={5}
 											duration={3}
 											enableScrollSpy={true}
-										/>{" "}
+										>
+											{({ countUpRef }) => (
+												<span ref={countUpRef} />
+											)}
+										</CountUp>{" "}
 										Million
 									</h3>
 								</div>
@@ -453,7 +466,11 @@ export default function Home() {
 											delay={index}
 											suffix="%"
 											enableScrollSpy={true}
-										/>
+										>
+											{({ countUpRef }) => (
+												<span ref={countUpRef} />
+											)}
+										</CountUp>
 									</h5>
 									<h6>{name}</h6>
 									<Svg />
@@ -576,6 +593,20 @@ export default function Home() {
 				</section>
 			</main>
 			<Footer />
+			<CookieConsent
+				style={{ background: "#121f11af", backdropFilter: "blur(5px)" }}
+				buttonStyle={{
+					color: "#4e503b",
+					padding: "0.7rem 1.4rem",
+					cursor: "pointer",
+					fontSize: "0.875rem",
+					fontWeight: "600",
+					transition: "transform 0.5s",
+					borderRadius: "0.347rem",
+				}}
+			>
+				This website uses cookies to enhance the user experience.
+			</CookieConsent>
 		</>
 	);
 }
