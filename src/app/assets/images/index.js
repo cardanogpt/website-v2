@@ -8,6 +8,7 @@ import cryptoslate from "./cryptoslate.png";
 import thedailyhodl from "./thedailyhodl.png";
 import utoday from "./utoday.png";
 import entrepreneur from "./entrepreneur.jpeg";
+import botImage from "./botImage.png";
 
 export {
 	logo,
@@ -20,4 +21,5 @@ export {
 	thedailyhodl,
 	utoday,
 	entrepreneur,
+	botImage,
 };
