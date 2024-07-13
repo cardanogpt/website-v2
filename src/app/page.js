@@ -38,6 +38,7 @@ import {
 import { config } from "react-spring";
 import CountUp from "react-countup";
 import CookieConsent from "react-cookie-consent";
+import ChatBot from "./components/chatbot";
 
 export default function Home() {
 	// initialize animation
@@ -48,6 +49,7 @@ export default function Home() {
 	return (
 		<>
 			<Header />
+			<ChatBot />
 			<main className={styles.main}>
 				<section className={styles.sectionOne}>
 					<div>

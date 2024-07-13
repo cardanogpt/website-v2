@@ -17,6 +17,11 @@ import EcoSystemStats8 from "./ecosystemStats8.svg";
 import EcoSystemStats9 from "./ecosystemStats9.svg";
 import UnderLine from "./underline.svg";
 import Arrow from "./arrow.svg";
+import SendIcon from "./send.svg";
+import MicrophoneIcon from "./microphone.svg";
+import MinimizeIcon from "./minimize.svg";
+import ScaleIcon from "./scale.svg";
+import CloseChatIcon from "./closeChat.svg";
 
 export {
 	DiscordIcon,
@@ -38,4 +43,9 @@ export {
 	EcoSystemStats9,
 	UnderLine,
 	Arrow,
+	SendIcon,
+	MicrophoneIcon,
+	MinimizeIcon,
+	ScaleIcon,
+	CloseChatIcon,
 };
