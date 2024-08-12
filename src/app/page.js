@@ -331,9 +331,12 @@ export default function Home() {
 										</p>
 										<LineOne />
 									</div>
-									<a href="#" className="anchor-link">
+									<a
+										href="https://stake.cardanogpt.ai/"
+										className="anchor-link"
+									>
 										<Button variant="A">
-											CGI staking coming soon
+											Start Staking Now!
 										</Button>
 									</a>
 								</div>
@@ -712,8 +715,11 @@ const slides = [
 						</p>
 						<LineOne />
 					</div>
-					<a href="#" className="anchor-link">
-						<Button variant="A">CGI staking coming soon</Button>
+					<a
+						href="https://stake.cardanogpt.ai/"
+						className="anchor-link"
+					>
+						<Button variant="A">Start Staking Now!</Button>
 					</a>
 				</div>
 			</div>
