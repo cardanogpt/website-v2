@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import styles from "./styles.module.css";
-import { BUY_CGI, Close, DOCS_LINK, Hamburger, logo } from "@/app/assets";
+import { STAKE_CGI, Close, DOCS_LINK, Hamburger, logo } from "@/app/assets";
 import { Button } from "../button";
 import Link from "next/link";
 
@@ -34,8 +34,8 @@ export const Header = () => {
 						</li>
 					</ul>
 				</nav>
-				<a href={BUY_CGI} className={`anchor-link`} target="_blank">
-					<Button variant="C">Buy CGI</Button>
+				<a href={STAKE_CGI} className={`anchor-link`} target="_blank">
+					<Button variant="C">Stake CGI</Button>
 				</a>
 			</header>
 			<div className={styles.headerSmallContainer}>
@@ -67,7 +67,11 @@ export const Header = () => {
 							</a>
 						</li>
 					</ul>
-					<a href={BUY_CGI} className={`anchor-link`} target="_blank">
+					<a
+						href={STAKE_CGI}
+						className={`anchor-link`}
+						target="_blank"
+					>
 						<Button variant="C">Buy CGI</Button>
 					</a>
 				</nav>
