@@ -72,7 +72,7 @@ export const Header = () => {
 						className={`anchor-link`}
 						target="_blank"
 					>
-						<Button variant="C">Buy CGI</Button>
+						<Button variant="C">Stake CGI</Button>
 					</a>
 				</nav>
 			</div>
