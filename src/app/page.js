@@ -7,7 +7,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { Button, Footer, Header, VerticalCarousel } from "./components";
 import {
-	BUY_CGI,
+	STAKE_CGI,
 	DISCORD_LINK,
 	DOCS_LINK,
 	DiscordIcon,
@@ -59,11 +59,11 @@ export default function Home() {
 						</p>
 						<div className={styles.sectionOneButtons}>
 							<a
-								href={BUY_CGI}
+								href={STAKE_CGI}
 								target="_blank"
 								className="anchor-link"
 							>
-								<Button variant="B">Buy CGI</Button>
+								<Button variant="B">Stake CGI</Button>
 							</a>
 							<a
 								href={DISCORD_LINK}
